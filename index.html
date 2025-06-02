@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV & Web - Basic Actions</title>
+    <script src="scripts.js"></script>
+    <script async src="https://docs.opencv.org/4.9.0/opencv.js" onload="OpenCVReady();"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main-page">
+        <div class="side-line">
+
+        </div>
+        <div class="side-bar">
+            <span id="btn-main"         class="circle"><i class="material-icons md-36 md-light">image</i></span>
+            <h3>Main Image</h3>
+            <span id="btn-blur"         class="circle"><i class="material-icons md-36 md-light">blur_on</i></span>
+            <h3>Blurred</h3>
+            <span id="btn-grey"         class="circle"><i class="material-icons md-36 md-light">tonality</i></span>
+            <h3>GreyScale</h3>
+            <span id="btn-canny"        class="circle"><i class="material-icons md-36 md-light">settings_overscan</i></span>
+            <h3>Canny</h3>
+            <span id="btn-threshold"    class="circle"><i class="material-icons md-36 md-light">data_thresholding</i></span>
+            <h3>Threshold</h3>
+            <span id="btn-dilate"       class="circle"><i class="material-icons md-36 md-light">open_with</i></span>
+            <h3>Dilate</h3>
+            <span id="btn-erode"        class="circle"><i class="material-icons md-36 md-light">grain</i></span>
+            <h3>Erode</h3>
+        </div>
+        
+        <div class="right-panel" style="align-items: center; justify-content: center;">
+            <div class="tablet-container" >
+                <img  src="tablet.png" height="100%" width="1080" alt="tablet" z-index="5">
+            </div>
+            <canvas id="main-canvas" width="960" height="540" >
+                <img width="980" height="630" id="img-main"src="vision.jpg" alt="car">
+            </canvas>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
